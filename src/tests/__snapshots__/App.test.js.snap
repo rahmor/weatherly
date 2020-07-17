@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component should render 1`] = `
+<main
+  className="App"
+>
+  <section
+    className="App-daily"
+  >
+    <header
+      className="App-daily-header"
+    >
+      <h1
+        className="App-title"
+      >
+        Weatherly
+      </h1>
+    </header>
+    <form>
+      <input
+        placeholder="Search by City"
+        type="search"
+      />
+      <button
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
+    <h2>
+      Atlanta, Ga
+    </h2>
+  </section>
+</main>
+`;
