@@ -1,17 +1,13 @@
 .App {
   display: flex;
   text-align: center;
-  background: url('./images/hexagon-2822770_1920.jpg') no-repeat center/cover;
+  background: url('../images/hexagon-2822770_1920.jpg') no-repeat center/cover;
   min-width: 100vw;
   min-height: 100vh;
   background-attachment: fixed;
 }
 
-.App-title {
-  color: white;
-}
-
-.App-daily {
+.App-frame-frosted {
   min-height: 100%;
   min-width: 100%;
   background: inherit;
@@ -21,7 +17,7 @@
   z-index: 1;
 }
 
-.App-daily:before {
+.App-frame-frosted:before {
   content: '';
   position: absolute;
   background: inherit;
@@ -29,7 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: inset 0, 0 2000px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 2000px rgba(67, 50, 86, 0.5);
   filter: blur(10px);
   margin: -10px;
   z-index: -1;

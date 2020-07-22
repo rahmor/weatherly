@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DailyWeather component should rendeer UI as expected 1`] = `
+<header
+  className="Header-container"
+>
+  <h1
+    className="Header-title"
+  >
+    Weatherly
+  </h1>
+  <form>
+    <input
+      placeholder="Search by City"
+      type="search"
+    />
+    <button
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <h2>
+    Atlanta, Ga
+  </h2>
+</header>
+`;
