@@ -1,19 +1,25 @@
 import React from 'react';
 import Header from '../Header/Header';
 import DailyWeather from '../DailyWeather/DailyWeather';
+import { connect } from 'react-redux';
 import './App.css';
 
-function App() {
+function App(props) {
   return (
     <div className='App'>
       <section className='App-frame-frosted'>
-        <Header />
+        <Header {...props} />
         <main>
-          <DailyWeather />
+          <DailyWeather {...props} />
         </main>
       </section>
     </div>
   );
 }
 
-export default App;
+function mapStateToProps(state) {
+  const { city } = state;
+  return { city };
+}
+
+export default connect(mapStateToProps)(App);

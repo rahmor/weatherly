@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-function Header() {
+function Header({ city }) {
   return (
     <header className='Header-container'>
       <h1 className='Header-title'>Weatherly</h1>
@@ -9,7 +9,7 @@ function Header() {
         <input type='search' placeholder='Search by City' />
         <button type='submit'>Search</button>
       </form>
-      <h2>Atlanta, Ga</h2>
+      <h2>{city}</h2>
     </header>
   );
 }

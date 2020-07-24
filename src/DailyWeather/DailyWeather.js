@@ -1,11 +1,11 @@
 import React from 'react';
 import './DailyWeather.css';
 
-function DailyWeather() {
+function DailyWeather({ city }) {
   return (
     <div className='DailyWeather-container'>
       <div className='DailyWeather-temp'>
-        <h3>Atl, Ga Weather</h3>
+        <h3>{city} Weather</h3>
         <p>as of 10:00pm</p>
         <p>91</p>
         <p>Partly Cloudy</p>
