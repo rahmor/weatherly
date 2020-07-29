@@ -1,12 +1,14 @@
 const initialState = {
-  city: 'Atlanta, Ga',
+  city: '',
 };
 
-function dailyWeather(state = initialState, action) {
+function addCityReducer(state = initialState, action) {
   switch (action.type) {
+    case 'UPDATE CITY':
+      return Object.assign({}, state, { city: action.payload });
     default:
       return state;
   }
 }
 
-export default dailyWeather;
+export default addCityReducer;

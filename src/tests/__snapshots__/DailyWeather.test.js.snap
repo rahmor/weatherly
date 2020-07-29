@@ -8,7 +8,7 @@ exports[`DailyWeather component should render UI as expected 1`] = `
     className="DailyWeather-temp"
   >
     <h3>
-      Atl, Ga Weather
+       Weather
     </h3>
     <p>
       as of 10:00pm
