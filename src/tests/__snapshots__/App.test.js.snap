@@ -7,7 +7,7 @@ exports[`App Component should match snapshot 1`] = `
   <section
     className="App-frame-frosted"
   >
-    <Header />
+    <Connect(Header) />
     <main>
       <DailyWeather />
     </main>

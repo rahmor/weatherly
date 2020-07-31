@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DailyWeather component should rendeer UI as expected 1`] = `
+exports[`DailyWeather component should render UI as expected 1`] = `
 <header
   className="Header-container"
 >
@@ -9,19 +9,29 @@ exports[`DailyWeather component should rendeer UI as expected 1`] = `
   >
     Weatherly
   </h1>
-  <form>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      className="App-visually-hidden"
+      htmlFor="location"
+    >
+      Search by City
+    </label>
     <input
+      id="location"
+      name="location"
+      onChange={[Function]}
       placeholder="Search by City"
       type="search"
     />
     <button
+      name="submitCity"
       type="submit"
     >
       Search
     </button>
   </form>
-  <h2>
-    Atlanta, Ga
-  </h2>
+  <h2 />
 </header>
 `;

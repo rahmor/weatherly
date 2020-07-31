@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import './Header.css';
 import submitCity from '../../actions/actions';
 
-class Header extends React.Component {
+export class Header extends React.Component {
   state = {
     city: '',
   };

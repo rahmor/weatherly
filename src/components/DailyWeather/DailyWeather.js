@@ -1,7 +1,7 @@
 import React from 'react';
 import './DailyWeather.css';
 
-class DailyWeather extends React.Component {
+export class DailyWeather extends React.Component {
   render() {
     return (
       <div className='DailyWeather-container'>

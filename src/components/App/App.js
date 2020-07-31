@@ -4,7 +4,7 @@ import DailyWeather from '../DailyWeather/DailyWeather';
 import { connect } from 'react-redux';
 import './App.css';
 
-class App extends React.Component {
+export class App extends React.Component {
   render() {
     return (
       <div className='App'>
