@@ -1,7 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import './Header.css';
-import submitCity from '../../actions/actions';
 
 export class Header extends React.Component {
   state = {
@@ -14,7 +12,7 @@ export class Header extends React.Component {
 
   submitCity = (event) => {
     event.preventDefault();
-    this.props.dispatch(submitCity(this.state.city));
+    this.props.udpateCity(this.state.city);
   };
 
   render() {
@@ -43,4 +41,4 @@ export class Header extends React.Component {
   }
 }
 
-export default connect()(Header);
+export default Header;
