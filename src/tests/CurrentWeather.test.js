@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { DailyWeather } from '../components/DailyWeather/DailyWeather';
+import { CurrentWeather } from '../components/CurrentWeather/CurrentWeather';
 
-describe('DailyWeather component', () => {
+describe('CurrentWeather component', () => {
   it('should render UI as expected', () => {
-    const wrapper = shallow(<DailyWeather />);
+    const wrapper = shallow(<CurrentWeather />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

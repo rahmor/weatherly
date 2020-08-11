@@ -1,7 +1,7 @@
 import React from 'react';
-import './DailyWeather.css';
+import './CurrentWeather.css';
 
-export class DailyWeather extends React.Component {
+export class CurrentWeather extends React.Component {
   displayWeather = () => {
     if (this.props.fetchError) {
       return <h1>Please Enter a Location to get the Weather </h1>;
@@ -20,11 +20,11 @@ export class DailyWeather extends React.Component {
 
   render() {
     return (
-      <div className='DailyWeather-container'>
-        <div className='DailyWeather-temp'>
+      <div className='CurrentWeather-container'>
+        <div className='CurrentWeather-temp'>
           {this.props.fetching ? <h1>Loading</h1> : this.displayWeather()}
         </div>
-        <div className='DailyWeather-icon'>
+        <div className='CurrentWeather-icon'>
           {this.props.fetching ? (
             <h1>Loading</h1>
           ) : (
@@ -41,4 +41,4 @@ export class DailyWeather extends React.Component {
   }
 }
 
-export default DailyWeather;
+export default CurrentWeather;

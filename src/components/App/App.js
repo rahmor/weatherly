@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
-import DailyWeather from '../DailyWeather/DailyWeather';
+import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import lodash from 'lodash';
 import { connect } from 'react-redux';
 import { fetchWeather, updateCity } from '../../actions/actions';
@@ -33,7 +33,7 @@ export class App extends React.Component {
         <section className='App-frame-frosted'>
           <Header {...this.props} />
           <main>
-            <DailyWeather {...this.props} />
+            <CurrentWeather {...this.props} />
           </main>
         </section>
       </div>

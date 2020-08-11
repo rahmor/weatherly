@@ -1,5 +1,5 @@
-.DailyWeather-temp,
-.DailyWeather-icon {
+.CurrentWeather-temp,
+.CurrentWeather-icon {
   box-shadow: 0 0 10px purple;
   border-radius: 2px;
   width: 120px;
