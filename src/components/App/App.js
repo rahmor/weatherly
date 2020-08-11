@@ -23,7 +23,7 @@ export class App extends React.Component {
   componentDidMount() {
     let cities = Object.keys(this.state.CITIES);
     let city = lodash.sample(cities);
-    // this.props.fetchWeather(this.state.CITIES[city]);
+    this.props.fetchWeather(this.state.CITIES[city]);
     this.props.updateCity(city);
   }
 

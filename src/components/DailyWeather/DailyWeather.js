@@ -8,7 +8,8 @@ export class DailyWeather extends React.Component {
     } else {
       return (
         <>
-          <h3>{this.props.city} Weather</h3>
+          <h3>{this.props.city}</h3>
+          <h3>Weather</h3>
           <p>as of {this.props.current.time}</p>
           <p>{this.props.current.temp}</p>
           <p>{this.props.current.condition}</p>{' '}
@@ -28,7 +29,7 @@ export class DailyWeather extends React.Component {
             <h1>Loading</h1>
           ) : (
             <>
-              <h3>Weather Icon</h3>
+              <img src={this.props.current.icon} alt='Weather Icon' />
               <p>
                 Hi-{this.props.current.hi}, Lo-{this.props.current.lo}
               </p>
