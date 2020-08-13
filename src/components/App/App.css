@@ -1,7 +1,7 @@
 .App {
   display: flex;
   text-align: center;
-  background: url('../../images/hexagon-2822770_1920.jpg') no-repeat
+  background: url('../../assets/hexagon-2822770_1920.jpg') no-repeat
     center/cover;
   min-width: 100vw;
   min-height: 100vh;

@@ -1,7 +1,7 @@
 function updateCityReducer(state = '', action) {
   switch (action.type) {
     case 'UPDATE CITY':
-      return (state = action.payload);
+      return action.payload;
     default:
       return state;
   }
